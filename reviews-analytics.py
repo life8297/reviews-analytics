@@ -26,6 +26,11 @@ for d in data:
 		good_reviews.append(d)
 print('留言中有提到good的留言有', len(good_reviews), '筆')
 
-# 篩選內含good之留言-清單快寫法
+# 篩選內含good之留言-清單快寫法list comprehension
 good = [d for d in data if 'good' in d]
 print('留言中有提到good的留言有', len(good), '筆')
+# 快寫說明:拆解成三部分 
+# for d in data: 將data用for拆解為d字串
+# if 'good' in d: 如果d字串中含有good
+# d: 則儲存到d中
+# 並逐筆儲存為good = [d]
